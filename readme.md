@@ -1,5 +1,5 @@
 # export-issues-to-csv
-指定したリポジトリから、前日にClosedされたIssueをGitHub APIから取得し、CSVで出力します。
+指定したリポジトリから、前日にClosedされたIssueをGitHub APIから取得し、CSVで出力します。 
 ClosedになったIssueのリードタイムを計測する目的で作成したスクリプトです。
 
 ## セットアップ

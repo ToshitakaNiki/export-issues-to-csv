@@ -6,6 +6,8 @@ source ./.env
 # 昨日の日付を取得
 YESTERDAY=$(date -v -1d '+%Y-%m-%d')
 
+touch ./closed_issues.json
+
 # リポジトリごとにIssueを取得する
 for ((i = 0; i < ${#REPOSITORIES[@]}; i++)); do
   # 検索クエリ

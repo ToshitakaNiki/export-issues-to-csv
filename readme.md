@@ -7,7 +7,7 @@ ClosedになったIssueのリードタイムを計測する目的で作成した
 GitHubのアカウントが必要です。
 
 ### GitHub CLI
-GitHubのIssueは[GitHub CLI](https://docs.github.com/ja/github-cli/github-cli/about-github-cli)のAPIで取得します。 
+GitHubのIssueは[GitHub CLI](https://docs.github.com/ja/github-cli/github-cli/about-github-cli)のAPIで取得します。  
 GitHub CLIのインストールとAPIからデータを取得するための[アクセストークンの設定](https://docs.github.com/ja/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)が必要です。
 
 ### Node.js

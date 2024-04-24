@@ -36,12 +36,7 @@ for ((i = 0; i < ${#REPOSITORIES[@]}; i++)); do
     }' -f search_query="$search_query" >search_result.json
   
   # 取得したIssueを$ITEMSに格納する
-  ITEMS=$(
-    jq --arg project_id "$PROJECT_ID" '
-      .data.search.nodes[]
-    ' search_result.json |
-      jq -cs .
-  )
+  ITEMS=$(jq '.data.search.nodes[]' search_result.json | jq -cs .)
   # ITEMS配列の値をIssueのJSONファイルの配列の末尾に追加する
   CLOSED_ISSUES=$(jq -s '.[0] + .[1]' closed_issues.json <(echo "$ITEMS"))
   echo "$CLOSED_ISSUES" >closed_issues.json
